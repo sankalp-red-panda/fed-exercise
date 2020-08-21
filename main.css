@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+}
+
+.sidebar {
+  -webkit-box-flex: 0.7;
+      -ms-flex-positive: 0.7;
+          flex-grow: 0.7;
+  height: 100%;
+  -webkit-box-shadow: 3px 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar .sidebar-top {
+  background: black;
+  height: 60px;
+}
+
+.sidebar .sidebar-top .rp-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0 10px 0;
+}
+
+.sidebar .sidebar-content {
+  background: white;
+}
+
+.sidebar .sidebar-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar .sidebar-content ul li {
+  height: 30px;
+  padding: 8px 20px 5px 20px;
+}
+
+.sidebar .sidebar-content ul img {
+  float: right;
+  margin-top: 1.5px;
+}
+
+.sidebar .sidebar-content ul hr {
+  width: 80%;
+}
+
+.sidebar .sidebar-content ul > :first-child {
+  background: #baeeff;
+  border-left: 5px solid blue;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+  .sidebar-small-screen {
+    position: absolute;
+    width: 70%;
+    z-index: 100;
+    background: white;
+  }
+  .hamburger-container {
+    padding: 15px 0 0 20px;
+  }
+  .hamburger-container .hamburger {
+    height: 4px;
+    width: 30px;
+    background-color: black;
+    margin: 6px 0;
+  }
+}
+
+.cross-container {
+  height: 20px;
+  width: 20px;
+  padding: 2px;
+  display: none;
+  position: absolute;
+  left: 225px;
+  top: 20px;
+  z-index: 100;
+  background: white;
+}
+
+.cross-container #cross {
+  height: 4px;
+  width: 30px;
+  margin: 6px 0;
+  padding: 2px;
+}
+
+.page-content {
+  -webkit-box-flex: 6;
+      -ms-flex-positive: 6;
+          flex-grow: 6;
+  height: 100%;
+}
+
+.page-content .profile {
+  height: 60px;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.page-content .profile .profile-image {
+  height: 40px;
+  float: right;
+  padding: 10px;
+}
+
+.page-content .main-content {
+  height: calc(100% - 60px);
+}
+/*# sourceMappingURL=main.css.map */
